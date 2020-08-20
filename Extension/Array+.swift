@@ -17,7 +17,7 @@ extension Array where Element: Hashable {
     }
     func previous(item: Element) -> Element? {
         if let index = self.firstIndex(of: item) {
-            if index - 1 > 0 {
+            if index - 1 >= 0 {
                 return self[index - 1]
             }
         }
